@@ -1,0 +1,176 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   variables.css — Design tokens with light & dark theme support
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* ── Light theme (default) ─────────────────────────────────────────────── */
+:root {
+
+  /* App shell */
+  --app-bg:               #f5f3ff;
+  --header-bg:            rgba(255, 255, 255, 0.92);
+  --header-border:        rgba(124, 58, 237, 0.15);
+  --header-text:          #1e293b;
+  --header-height:        112px;
+
+  /* Sidebar */
+  --sidebar-bg:           #ffffff;
+  --sidebar-border:       rgba(124, 58, 237, 0.15);
+  --sidebar-hint-color:   #94a3b8;
+  --sidebar-card-bg:      rgba(124, 58, 237, 0.05);
+  --sidebar-card-border:  rgba(124, 58, 237, 0.18);
+  --sidebar-card-bg-hover:     rgba(124, 58, 237, 0.13);
+  --sidebar-card-border-hover: rgba(124, 58, 237, 0.45);
+  --sidebar-card-text:    #4c1d95;
+  --sidebar-card-desc:    #7c3aed;
+  --sidebar-cat-bg:       rgba(124, 58, 237, 0.1);
+  --sidebar-cat-text:     #7c3aed;
+
+  /* Category tabs */
+  --tab-active-bg:        rgba(124, 58, 237, 0.12);
+  --tab-active-text:      #7c3aed;
+  --tab-active-border:    rgba(124, 58, 237, 0.4);
+  --tab-text:             #64748b;
+
+  /* Node shell */
+  --node-bg:              #ffffff;
+  --node-border:          rgba(124, 58, 237, 0.25);
+  --node-border-radius:   10px;
+  --node-shadow:          0 2px 10px rgba(124, 58, 237, 0.1);
+  --node-shadow-selected: 0 0 0 2px #a78bfa;
+  --node-width:           230px;
+
+  /* Node header */
+  --node-header-height:   34px;
+  --node-header-padding:  0 12px;
+  --node-header-text:     #ffffff;
+  --node-header-fs:       11px;
+  --node-header-fw:       600;
+  --node-header-ls:       0.07em;
+  --node-icon-fs:         13px;
+
+  /* Node body */
+  --node-body-padding:    10px 12px 12px;
+  --node-body-gap:        8px;
+  --node-label-color:     #64748b;
+  --node-label-fs:        11px;
+  --node-label-fw:        500;
+  --node-value-color:     #1e293b;
+  --node-value-fs:        12px;
+
+  /* Form controls inside nodes */
+  --input-bg:             #f8fafc;
+  --input-border:         #ddd6fe;
+  --input-border-radius:  5px;
+  --input-padding:        5px 8px;
+  --input-fs:             12px;
+  --input-color:          #1e293b;
+  --input-focus-border:   #8b5cf6;
+
+  /* Handles */
+  --handle-size:          10px;
+  --handle-border-width:  2px;
+  --handle-color:         var(--node-color, #7c3aed);
+
+  /* Edges */
+  --edge-color:           #8b5cf6;
+
+  /* Buttons */
+  --btn-ghost-bg:         rgba(124, 58, 237, 0.08);
+  --btn-ghost-border:     rgba(124, 58, 237, 0.35);
+  --btn-ghost-text:       #7c3aed;
+  --btn-ghost-bg-hover:   rgba(124, 58, 237, 0.16);
+
+  /* Node category accent colors */
+  --color-node-ai:        #7C3AED;
+  --color-node-data-in:   #2563EB;
+  --color-node-data-out:  #059669;
+  --color-node-process:   #D97706;
+  --color-node-util:      #64748B;
+  --color-node-external:  #DC2626;
+  --color-node-storage:   #0891B2;
+  --color-node-trigger:   #0F766E;
+
+  /* Brand */
+  --color-primary:        #7c3aed;
+  --color-primary-hover:  #6d28d9;
+  --color-success:        #10B981;
+  --color-error:          #EF4444;
+  --color-text-muted:     #94a3b8;
+
+  /* Canvas dot grid */
+  --dot-color:            rgba(124, 58, 237, 0.18);
+}
+
+/* ── Dark theme ─────────────────────────────────────────────────────────── */
+[data-theme="dark"] {
+
+  /* App shell */
+  --app-bg:               linear-gradient(135deg, #1a0533 0%, #0f0a2e 40%, #0c1445 100%);
+  --header-bg:            rgba(15, 10, 40, 0.85);
+  --header-border:        rgba(139, 92, 246, 0.2);
+  --header-text:          #e2e8f0;
+
+  /* Sidebar */
+  --sidebar-bg:           rgba(15, 10, 40, 0.65);
+  --sidebar-border:       rgba(139, 92, 246, 0.15);
+  --sidebar-hint-color:   #4a4560;
+  --sidebar-card-bg:      rgba(124, 58, 237, 0.08);
+  --sidebar-card-border:  rgba(139, 92, 246, 0.2);
+  --sidebar-card-bg-hover:     rgba(124, 58, 237, 0.22);
+  --sidebar-card-border-hover: rgba(139, 92, 246, 0.55);
+  --sidebar-card-text:    #d4c0ff;
+  --sidebar-card-desc:    #7c6faa;
+  --sidebar-cat-bg:       rgba(124, 58, 237, 0.18);
+  --sidebar-cat-text:     #a78bfa;
+
+  /* Category tabs */
+  --tab-active-bg:        rgba(124, 58, 237, 0.35);
+  --tab-active-text:      #e9e0ff;
+  --tab-active-border:    rgba(139, 92, 246, 0.0);
+  --tab-text:             #8b8ca8;
+
+  /* Node shell — dark glass card */
+  --node-bg:              rgba(30, 20, 60, 0.88);
+  --node-border:          rgba(139, 92, 246, 0.4);
+  --node-shadow:          2px 2px 16px rgba(0, 0, 0, 0.5);
+  --node-shadow-selected: 0 0 0 2px #a78bfa;
+  --node-header-text:     #e9e0ff;
+  --node-label-color:     #c4b5fd;
+  --node-value-color:     #e2e8f0;
+
+  /* Form controls inside nodes */
+  --input-bg:             rgba(124, 58, 237, 0.15);
+  --input-border:         rgba(139, 92, 246, 0.3);
+  --input-color:          #c4b5fd;
+  --input-focus-border:   rgba(139, 92, 246, 0.7);
+
+  /* Handles — uniform purple in dark mode */
+  --handle-color:         #8b5cf6;
+
+  /* Edges */
+  --edge-color:           #8b5cf6;
+
+  /* Buttons */
+  --btn-ghost-bg:         rgba(124, 58, 237, 0.15);
+  --btn-ghost-border:     rgba(139, 92, 246, 0.4);
+  --btn-ghost-text:       #c4b5fd;
+  --btn-ghost-bg-hover:   rgba(124, 58, 237, 0.28);
+
+  /* All node header accents unify to translucent purple in dark mode */
+  --color-node-ai:        rgba(124, 58, 237, 0.4);
+  --color-node-data-in:   rgba(124, 58, 237, 0.4);
+  --color-node-data-out:  rgba(124, 58, 237, 0.4);
+  --color-node-process:   rgba(124, 58, 237, 0.4);
+  --color-node-util:      rgba(124, 58, 237, 0.4);
+  --color-node-external:  rgba(124, 58, 237, 0.4);
+  --color-node-storage:   rgba(124, 58, 237, 0.4);
+  --color-node-trigger:   rgba(124, 58, 237, 0.4);
+
+  /* Brand */
+  --color-primary:        #7c3aed;
+  --color-primary-hover:  #8b5cf6;
+  --color-text-muted:     #8b8ca8;
+
+  /* Canvas dot grid */
+  --dot-color:            rgba(139, 92, 246, 0.14);
+}
